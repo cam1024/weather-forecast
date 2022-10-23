@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --light-blue:#476fb3;
+    --main-blue: #385ea0;
+    --dark-blue: #122e60;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:18px;
+    padding-bottom:30px;
+}
+
+.show{visibility:visible;}
+.hide{visibility:hidden;}
+
+.div-divider{
+    width:100%;
+    margin:18px 0;
+    border-bottom:1.5px solid #CCC;
+}
+
+.header{
+    padding:15px;
+    color:#FFF;
+    text-align:center;
+    font-size:30px;
+    background: linear-gradient(to right, var(--main-blue), var(--dark-blue));
+}
+
+#search-form input[type="text"]{
+    border:none;
+    outline:none;
+    width:100%;
+    padding:10px;
+    border:1px solid rgb(190, 190, 190);
+    border-radius:5px;
+}
+
+#search-form input[type="submit"]{
+    margin-top:15px;
+    border:none;
+    outline:none;
+    width:100%;
+    padding:10px;
+    background-color:var(--main-blue);
+    border-radius:5px;
+    color:#FFF;
+}
+
+#search-form input[type="submit"]:hover{
+    background-color:#4371c2;
+}
+
+#search-history{
+    margin-top:10px;
+}
+
+/* Search History City Item */
+.prev-city{
+    width:100%;
+    padding:8px;
+    color:#000;
+    text-align:center;
+    border-radius:5px;
+    background-color:rgb(255, 255, 255);
+    margin-top:10px;
+    position:relative;
+}
+
+.prev-city:hover{
+    background-color:rgb(255, 255, 255);
+    cursor:pointer;
+}
+/* End of Search History City Item */
+
+/* Delete Icon */
+.bi{
+    color:#b73030;
+    font-size:22px;
+    position:absolute;
+    height:100%;
+    width:50px;
+    top:0;
+    right:0;
+    border-left:1px solid #FFF;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    line-height:2.0;
+    z-index:101;
+}
+
+.bi:hover{
+    background-color:rgb(160, 160, 160);
+}
+/* End of Delete Icon */
+
+/* Warning DIV for bad search */
+#warning{
+    width:100%;
+    margin:10px 0;
+    color:red;
+    display:none;
+}
+
+
+/* Today's Weather */
+.main-card{
+    width:100%;
+    padding:10px;
+    border:1px solid #CCC;
+    border-radius:5px;
+}
+
+.main-card h2{
+    margin:0;
+}
+
+.main-card ul{
+    list-style-type:none;
+    margin:10px 0 0 0;
+    padding:0;
+}
+
+.main-card ul li{
+    padding-bottom:15px;
+}
+
+#todays-date{
+    font-size:21px;
+    font-weight:bold;
+    color:var(--main-blue);
+}
+
+#uv-index{
+    padding:8px;
+    color:white;
+    border-radius:5px;
+}
+/* End of Today's Weather */
+
+/* 5 Day Forecast Cards */
