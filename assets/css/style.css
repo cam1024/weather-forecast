@@ -5,9 +5,9 @@
 }
 
 :root{
-    --light-blue:#476fb3;
-    --main-blue: #385ea0;
-    --dark-blue: #122e60;
+    --light:#476fb3;
+    --main: #385ea0;
+    --dark: #122e60;
 }
 
 body{
@@ -30,7 +30,7 @@ body{
     color:#FFF;
     text-align:center;
     font-size:30px;
-    background: linear-gradient(to right, var(--main-blue), var(--dark-blue));
+    background: linear-gradient(to right, var(--main), var(--dark));
 }
 
 #search-form input[type="text"]{
@@ -48,7 +48,7 @@ body{
     outline:none;
     width:100%;
     padding:10px;
-    background-color:var(--main-blue);
+    background-color:var(--main);
     border-radius:5px;
     color:#FFF;
 }
@@ -134,7 +134,7 @@ body{
 #todays-date{
     font-size:21px;
     font-weight:bold;
-    color:var(--main-blue);
+    color:var(--main);
 }
 
 #uv-index{
@@ -145,3 +145,42 @@ body{
 /* End of Today's Weather */
 
 /* 5 Day Forecast Cards */
+.card{
+    background-color:#33475a;
+    background-color:var(--light);
+    color:white;
+}
+.card-title{
+    line-height:1.4;
+}
+
+.card-text ul{
+    list-style-type:none;
+    margin:10px 0 0 0;
+    padding:0;
+}
+.card-text ul li{
+    padding-bottom:10px;
+}
+/* End of 5 Day Forecast Cards */
+
+/* UV Index Scale Colors (Official EPA colors and ranges) */
+/* Low 0 1 2 */
+.uv-low{background-color:#299501;}
+.uv-low::after{content: " - Low";}
+
+/* Moderate 3 4 5 */
+.uv-moderate{background-color:#f7e401;}
+.uv-moderate::after{content: " - Moderate"}
+
+/* High 6 7 */
+.uv-high{background-color:#f95901;}
+.uv-high::after{content: " - High"}
+
+/* Very High 8 9 10 */
+.uv-very-high{background-color:#d90011;}
+.uv-very-high::after{content: " - Very High"}
+
+/* Extreme 11+ */
+.uv-extreme{background-color:#6c49c9;}
+.uv-extreme::after{content: " - Extreme"}
