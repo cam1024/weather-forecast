@@ -191,4 +191,5 @@ searchForm.addEventListener("submit", function(event){
     document.getElementById("city-search").value = "";
     getCoordinates(city);
 
-)};
+});})}},
+)}
