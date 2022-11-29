@@ -23,10 +23,10 @@
         <div class="row mt-3">
             <!-- History Sidebar -->
             <div class="col-md-12 col-lg-4">
-                <form id="search-form">
+                <form id="search-form" action="javascript:getCoordinates()">
                     <h3>Search for a City:</h3>
-                    <input id="city-search" type="text" placeholder="Enter a city name">
-                    <input type="submit" value="Search">
+                    <input value id="city-search" type="text" placeholder="Enter a city name">
+                    <button type="submit">Search</button>
                 </form>
 
                 <div class="div-divider"></div>
@@ -38,16 +38,16 @@
             <!-- End of History Sidebar -->
 
             <!-- Main content area -->
-            <div class="col-md-12 col-lg-8 mt-3 hide" id="main-content">
+            <div class="col-md-12 col-lg-8 mt-3" id="main-content">
                 <div class="main-card">
                     <h2><span id="city">Sacramento</span> <span id="icon"></span></h2>
-                    <div id="todays-date">2/2/2022</div>
+                    <div id="todays-date">mm/dd/yyyy</div>
 
                     <ul>
                         <li><strong>Temp: </strong><span id="temp"></span>&deg;F</li>
                         <li><strong>Wind: </strong><span id="wind"></span> MPH</li>
                         <li><strong>Humidity: </strong><span id="humidity"></span>%</li>
-                        <li><strong>UV Index: </strong><span id="uv-index">0.47</span></li>
+                        <!--<li><strong>UV Index: </strong><span id="uv-index">0.47</span></li>-->!
                     </ul>
                 </div>
 
